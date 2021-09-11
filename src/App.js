@@ -11,7 +11,7 @@ function App() {
   }, [])
   let fetchTaskList = async ()=>{
     try {
-    let product = await axios.get("https://node-app-gopi.herokuapp.com//list-all-todo")
+    let product = await axios.get("https://node-app-gopi.herokuapp.com/list-all-todo")
     console.log(product.data)
     setTodo([...product.data])
   } catch (error) {
